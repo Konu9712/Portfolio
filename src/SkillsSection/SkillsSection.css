@@ -1,0 +1,132 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Base section styles */
+.skills-section {
+  position: relative;
+  padding: 5rem 1rem;
+  background-color: #0a0a0a;
+  overflow: hidden;
+}
+
+/* Background effects */
+.skills-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.skills-radial-gradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at center, rgba(0, 128, 255, 0.1) 0, transparent 40%);
+}
+
+/* Content container */
+.skills-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* Heading */
+.skills-heading {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Skill card */
+.skill-card {
+  background: rgba(22, 22, 22, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Skill icons */
+.skill-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.skill-icon-cyan {
+  color: #22d3ee;
+}
+
+.skill-icon-lime {
+  color: #a3e635;
+}
+
+.skill-icon-amber {
+  color: #fbbf24;
+}
+
+/* Card title */
+.skill-card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+  color: white;
+}
+
+/* Skill list */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  background-color: rgba(38, 38, 38, 0.5);
+  color: #d4d4d4;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skill-card {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .skills-heading {
+    font-size: 3rem;
+  }
+}
