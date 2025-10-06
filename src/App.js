@@ -4,6 +4,7 @@ import { Toaster, toast } from 'sonner';
 import HeroSection from './Components/HeroSection/HeroSection';
 import SkillsSection from './Components/SkillsSection/SkillsSection';
 import ExperienceSection from './Components/ExperienceSection/ExperienceSection';
+import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
       <HeroSection/>
       <SkillsSection/>
       <ExperienceSection/>
+      <ProjectsSection/>
        <Toaster theme="dark" position="bottom-right" />
       </div>
   );
