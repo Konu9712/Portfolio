@@ -5,6 +5,7 @@ import HeroSection from './Components/HeroSection/HeroSection';
 import SkillsSection from './Components/SkillsSection/SkillsSection';
 import ExperienceSection from './Components/ExperienceSection/ExperienceSection';
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
+import EducationSection from './Components/EducationSection/EducationSection';
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
       <SkillsSection/>
       <ExperienceSection/>
       <ProjectsSection/>
+      <EducationSection/>
        <Toaster theme="dark" position="bottom-right" />
       </div>
   );
