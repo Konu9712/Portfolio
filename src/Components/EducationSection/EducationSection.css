@@ -1,0 +1,218 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Base section styles */
+.education-section {
+  padding: 5rem 1rem;
+  background-color: #111111;
+}
+
+.education-container {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+/* Heading */
+.education-heading {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+/* Timeline container */
+.education-timeline {
+  position: relative;
+}
+
+/* Timeline line */
+.timeline-line {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #404040;
+}
+
+/* Education list */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Education item */
+.education-item {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Education info */
+.education-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Timeline dot */
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #111111;
+  border-radius: 50%;
+  border: 4px solid #404040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+}
+
+.dot-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #a855f7;
+}
+
+/* Education details */
+.education-details {
+  flex: 1;
+}
+
+.education-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.25rem 0;
+}
+
+.education-institution {
+  color: #d4d4d4;
+  margin: 0 0 0.25rem 0;
+}
+
+.education-date {
+  font-size: 0.875rem;
+  color: #a3a3a3;
+  margin: 0 0 0.5rem 0;
+}
+
+.education-type {
+  display: inline-block;
+  background-color: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+/* Mobile view (always visible on mobile) */
+.mobile-view {
+  display: block;
+}
+
+/* Desktop view (hidden on mobile) */
+.desktop-view {
+  display: none;
+}
+
+/* Hide specific elements on desktop */
+.hidden-on-desktop {
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .education-timeline {
+    padding: 0;
+  }
+
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .education-item {
+    padding-left: 0;
+  }
+
+  .education-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .education-info {
+    grid-column: 1 / -1;
+    justify-content: center;
+    position: relative;
+  }
+
+  .timeline-dot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Hide mobile view on desktop */
+  .mobile-view {
+    display: none;
+  }
+
+  /* Show desktop view */
+  .desktop-view {
+    display: block;
+  }
+
+  /* Left side items */
+  .left-side .mobile-view {
+    display: none;
+  }
+
+  .left-details {
+    text-align: right;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* Right side items */
+  .right-side .mobile-view {
+    display: none;
+  }
+
+  .right-details {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .education-title {
+    font-size: 1.5rem;
+  }
+
+  .education-institution {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .education-heading {
+    font-size: 3rem;
+  }
+}
