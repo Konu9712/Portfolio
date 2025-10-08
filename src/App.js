@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { Toaster, toast } from 'sonner'; 
+import { Toaster } from 'sonner'; 
 import HeroSection from './Components/HeroSection/HeroSection';
 import SkillsSection from './Components/SkillsSection/SkillsSection';
 import ExperienceSection from './Components/ExperienceSection/ExperienceSection';

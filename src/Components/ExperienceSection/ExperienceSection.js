@@ -87,16 +87,6 @@ const experienceData = [
 
 const ExperienceSection = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % experienceData[activeTab].images.length);
-  };
-
-  const handlePrevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + experienceData[activeTab].images.length) % experienceData[activeTab].images.length);
-  };
-
 
   return (
     <section className="experience-section">
