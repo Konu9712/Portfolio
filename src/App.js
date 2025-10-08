@@ -6,6 +6,7 @@ import SkillsSection from './Components/SkillsSection/SkillsSection';
 import ExperienceSection from './Components/ExperienceSection/ExperienceSection';
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 import EducationSection from './Components/EducationSection/EducationSection';
+import ContactSection from './Components/ContactSection/ContactSection';
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
       <ExperienceSection/>
       <ProjectsSection/>
       <EducationSection/>
+      <ContactSection/>
        <Toaster theme="dark" position="bottom-right" />
       </div>
   );
