@@ -49,12 +49,6 @@ useEffect(() => {
     return className;
   };
 
-  const handlePlayClick = (album, e) => {
-    e.stopPropagation();
-    if (onPlayClick) {
-      onPlayClick(album);
-    }
-  };
 
   return (
     <div 
