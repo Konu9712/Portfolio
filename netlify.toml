@@ -1,0 +1,39 @@
+# ===============================
+# Netlify Configuration for React + EmailJS
+# ===============================
+
+[build]
+  # Command to build your React app
+  command = "npm run build"
+
+  # Folder where the build output lives
+  publish = "build"
+
+  # Set Node version and prevent secret-scan blocking for public EmailJS keys
+  environment = { 
+    NODE_VERSION = "18",
+    SECRETS_SCAN_OMIT_KEYS = "REACT_APP_PUBLIC_KEY,REACT_APP_SERVICE_ID,REACT_APP_TEMPLATE_ID"
+  }
+
+# ===============================
+# Redirects (fixes routing for React Router)
+# ===============================
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ===============================
+# Build Image Settings (optional but stable)
+# Uncomment below if using new Netlify image and it causes issues
+# [build.image]
+#   id = "ubuntu-22.04"
+# ===============================
+
+# ===============================
+# Caching (optional)
+# ===============================
+
+[build.processing]
+  skip_processing = true
